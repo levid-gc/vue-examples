@@ -22,8 +22,9 @@ const MountingPhase = defineComponent({
   },
 
   mounted() {
-    (this.$attrs['data-names'] as string).split(',')
-      .forEach((name: string) => this.names.push(name));
+    (this.$attrs['data-names'] as string)
+      .split(',')
+      .forEach(name => this.names.push(name));
   }
 });
 
